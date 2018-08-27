@@ -1,0 +1,8 @@
+{
+  "presets": [
+    "es2015", "react", "latest","react-app"
+  ] ,
+  "plugins": [
+    "babel-plugin-transform-decorators-legacy"
+  ]
+}

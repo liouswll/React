@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TodoList from './TodoList';
+//import {BrowserRouter as Router} from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
+import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import './To.css'
 
-ReactDOM.render(<TodoList/>, document.getElementById('root'));
+ReactDOM.render(
+    <HashRouter basename='/'>
+        <App />
+    </HashRouter>,
+    document.getElementById('root'));
 registerServiceWorker();
